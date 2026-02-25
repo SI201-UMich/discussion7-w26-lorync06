@@ -32,7 +32,7 @@ def load_listings(f):
 
     # TODO: Read the CSV using csv.reader and convert it to a list a dictionaries
    
-     #pass
+     
     with open(full_path, 'r') as f:
         reader = csv.reader(f)
         header = next(reader)
@@ -63,7 +63,7 @@ def calculate_avg_price_by_neighbourhood_group_and_room(listings):
         dict mapping (neighbourhood_group, room_type) -> average_price (float)
         e.g. { ('Downtown', 'Entire home/apt'): 123.45, ... }
     """
-    # pass
+    
     
     count = {}
     total = {}
@@ -109,7 +109,7 @@ def write_summary_csv(out_filename, avg_prices):
         None
             Writes a CSV file with header: neighbourhood_group, room_type, average_price
     """
-    # pass
+    
     with open(out_filename, 'w', newline = '') as fout:
         writer = csv.writer(fout)
         writer.writerow(['neighbourhood_group','room_type','average_price'])
